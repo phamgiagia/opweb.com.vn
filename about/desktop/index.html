@@ -6071,8 +6071,7 @@
       });
 
       // Initially hide all content except the first one (data-toggle-content="1")
-      window.onload = () => {
-        const allContent = document.querySelectorAll("[data-toggle-content]");
+       const allContent = document.querySelectorAll("[data-toggle-content]");
         allContent.forEach((content, index) => {
           if (index === 0) {
             content.style.display = "block"; // Show the first content
@@ -6080,7 +6079,8 @@
             content.style.display = "none"; // Hide the rest of the content
           }
         });
-      };}catch(e){}
+      
+      }catch(e){}
       
     </script>
   </body>

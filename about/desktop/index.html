@@ -6045,7 +6045,7 @@
         });
     </script>
     <script>
-      // Get all menu buttons
+      try{// Get all menu buttons
       const menuButtons = document.querySelectorAll("[data-toggle-menu]");
 
       // Add click event listener to all buttons
@@ -6080,7 +6080,8 @@
             content.style.display = "none"; // Hide the rest of the content
           }
         });
-      };
+      };}catch(e){}
+      
     </script>
   </body>
 </html>

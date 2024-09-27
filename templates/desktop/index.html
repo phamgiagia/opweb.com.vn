@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squarespace Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- step 1 what site about -->
+    <section
+      class="container mx-auto px-4 py-8"
+      data-toggle-content="site-about"
+    >
+      <header class="mb-8">
+        <svg
+          class="w-40"
+          viewBox="0 0 200 28"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h28v28H0z" />
+          <path d="M39 13h4v4h-4zM51 13h4v4h-4zM63 13h4v4h-4z" fill="#000" />
+        </svg>
+      </header>
+
+      <main class="flex justify-between">
+        <div class="w-1/2">
+          <p class="text-sm text-gray-500 mb-2">STEP 1 OF 3</p>
+          <h1 class="text-4xl font-bold mb-4">What's your site about?</h1>
+          <p class="text-xl mb-8">This helps us guide your experience.</p>
+
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search for your site topic"
+                class="w-full p-2 pl-10 border border-gray-300 rounded-md"
+              />
+              <svg
+                class="w-5 h-5 absolute left-3 top-3 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-semibold mb-2">Popular Topics</h2>
+              <ul class="space-y-2">
+                <li>Photography</li>
+                <li>Art</li>
+                <li>Weddings</li>
+                <li>Design</li>
+                <li>Music</li>
+                <li>Real Estate & Properties</li>
+                <li>Construction & Maintenance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/3">
+          <img
+            src="/placeholder.svg?height=400&width=300"
+            alt="Decorative image"
+            class="w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </main>
+
+      <footer class="mt-8 flex justify-between">
+        <span
+          class="px-4 py-2 border border-gray-300 rounded-md cursor-pointer"
+          data-toggle-step="site-for"
+        >
+          SKIP
+        </span>
+        <span
+          class="px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer"
+          data-toggle-step="site-for"
+          >NEXT</span
+        >
+      </footer>
+    </section>
+    <!-- step 2 what site do -->
+    <section class="container mx-auto px-4 py-8" data-toggle-content="site-for">
+      <header class="flex justify-between items-center mb-8">
+        <svg
+          class="w-40"
+          viewBox="0 0 200 28"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h28v28H0z" />
+          <path d="M39 13h4v4h-4zM51 13h4v4h-4zM63 13h4v4h-4z" fill="#000" />
+        </svg>
+        <span
+          class="text-gray-500 cursor-pointer"
+          data-toggle-step="browse-template"
+          >I'M JUST BROWSING</span
+        >
+      </header>
+
+      <main class="flex">
+        <div class="w-2/3 pr-8">
+          <p class="text-sm text-gray-500 mb-2">STEP 2 OF 3</p>
+          <h1 class="text-4xl font-bold mb-8">
+            What do you want to do with your website?
+          </h1>
+
+          <div class="grid grid-cols-2 gap-4">
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Sell products</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Publish a blog or other media</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Sell on-demand videos</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Collect donations</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Showcase work/expertise</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Sell memberships</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Promote a physical business</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Get appointments</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Send invoices</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Promote an event or project</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Build community</span>
+            </label>
+            <label class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
+              <input
+                type="checkbox"
+                class="form-checkbox h-5 w-5 text-gray-600"
+              />
+              <span class="text-gray-700">Sell online courses</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="w-1/3">
+          <img
+            src="/placeholder.svg?height=400&width=300"
+            alt="Decorative image"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </main>
+
+      <footer class="mt-8 flex justify-between">
+        <span
+          class="px-4 py-2 border border-gray-300 rounded-md cursor-pointer"
+          data-toggle-step="site-about"
+        >
+          BACK
+        </span>
+        <div>
+          <span
+            class="px-4 py-2 border border-gray-300 rounded-md mr-2 cursor-pointer"
+            data-toggle-step="chose-template-option"
+          >
+            SKIP
+          </span>
+          <span
+            class="px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer"
+            data-toggle-step="chose-template-option"
+          >
+            NEXT
+          </span>
+        </div>
+      </footer>
+    </section>
+    <!-- step 3 chose-template-option -->
+    <section data-toggle-content="chose-template-option">
+      <header class="bg-white p-4 flex justify-between items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 170 170"
+          class="w-8 h-8"
+          fill="currentColor"
+        >
+          <path
+            d="M85 0C38.1 0 0 38.1 0 85s38.1 85 85 85 85-38.1 85-85S131.9 0 85 0zm0 110c-13.8 0-25-11.2-25-25s11.2-25 25-25 25 11.2 25 25-11.2 25-25 25z"
+          />
+        </svg>
+        <span
+          class="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md cursor-pointer"
+          data-toggle-step="browse-template"
+        >
+          CLOSE
+        </span>
+      </header>
+
+      <main class="flex-grow p-8 max-w-5xl mx-auto w-full">
+        <div class="mb-8">
+          <p class="text-sm text-gray-500 mb-2">STEP 3 OF 3</p>
+          <h1 class="text-4xl font-bold">
+            How would you like to start<br />building your website?
+          </h1>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6">
+              <h2 class="text-xl font-semibold mb-4">Designer Templates</h2>
+              <img
+                src="https://placehold.co/400x200"
+                alt="Designer Templates"
+                class="w-full h-48 object-cover mb-4 rounded-md"
+              />
+              <p class="text-gray-600 mb-4">
+                Choose from a curated set of professionally designed website
+                templates.
+              </p>
+            </div>
+            <div class="px-6 pb-6">
+              <span
+                class="w-full bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded flex justify-between items-center cursor-pointer"
+                data-toggle-step="browse-template"
+              >
+                Browse templates
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6">
+              <h2 class="text-xl font-semibold mb-4">Blueprint AI</h2>
+              <img
+                src="https://placehold.co/400x200"
+                alt="Blueprint AI"
+                class="w-full h-48 object-cover mb-4 rounded-md"
+              />
+              <p class="text-gray-600 mb-4">
+                Build a custom website guided by Squarespace Blueprint AI.
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                  >Coming soon</span
+                >
+              </p>
+            </div>
+            <div class="px-6 pb-6">
+              <span
+                class="w-full bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded flex justify-between items-center cursor-pointer"
+              >
+                Build with AI
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-white p-4">
+        <span
+          class="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md cursor-pointer"
+          data-toggle-step="site-for"
+        >
+          BACK
+        </span>
+      </footer>
+    </section>
+    <!-- step 4 browse template -->
+    <section data-toggle-content="browse-template">
+      <header class="border-b border-gray-200">
+        <div
+          class="container mx-auto px-4 py-4 flex justify-between items-center"
+        >
+          <div class="flex items-center">
+            <svg class="w-10 h-10" viewBox="0 0 170 170" fill="currentColor">
+              <path
+                d="M85 0C38.1 0 0 38.1 0 85s38.1 85 85 85 85-38.1 85-85S131.9 0 85 0zm0 110c-13.8 0-25-11.2-25-25s11.2-25 25-25 25 11.2 25 25-11.2 25-25 25z"
+              />
+            </svg>
+            <span class="ml-2 text-xl font-semibold">SQUARESPACE</span>
+          </div>
+          <nav>
+            <ul class="flex space-x-6">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900"
+                  >TEMPLATES</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900"
+                  >RESOURCES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-gray-900 cursor-pointer"
+                  data-toggle-step="login"
+                  >LOG IN</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-3">
+            <h1 class="text-5xl font-bold mb-8">
+              Make any template<br />yours with ease.
+            </h1>
+            <p class="text-gray-600 mb-8">
+              Whether you need a portfolio website, an online store, or a
+              personal blog, you can use Squarespace's customizable and
+              responsive website templates to get started.
+            </p>
+
+            <div class="flex items-center space-x-4 mb-8">
+              <span class="text-sm text-gray-600">57 Results</span>
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+                >Food ×</span
+              >
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+                >Online Store ×</span
+              >
+              <div class="flex-1"></div>
+              <span class="bg-black text-white px-4 py-2 rounded text-sm">
+                BUILD WITH AI
+              </span>
+            </div>
+
+            <div class="mb-8">
+              <h2 class="text-2xl font-semibold mb-4">
+                Best template matches (5)
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                  class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg"
+                >
+                  <!-- Image Section (height doubled) -->
+                  <a data-toggle-step="chose-color">
+                    <img
+                      class="w-full h-128 object-cover cursor-pointer transform transition-transform duration-500 hover:scale-105 p-5"
+                      src="https://via.placeholder.com/400x600"
+                      alt="Salon Image"
+                    />
+                  </a>
+
+                  <!-- Text and Button Section -->
+                  <div class="p-4 flex justify-between items-center">
+                    <!-- Salon Name -->
+                    <h2 class="text-xl font-semibold text-gray-900">
+                      EMMELINE
+                    </h2>
+
+                    <!-- Favorite Button -->
+                    <span
+                      class="text-gray-500 hover:text-red-500 cursor-pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row bg-black text-white mb-36">
+              <div class="p-8 md:p-12 lg:p-16 max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                  Build with AI
+                </h1>
+                <p class="text-lg md:text-xl mb-8">
+                  Choose from expertly curated colors, fonts, and page layouts
+                  to create a custom website template that matches your vision
+                  guided by Squarespace Blueprint AI.
+                </p>
+                <span
+                  class="bg-white text-black py-2 px-4 font-semibold inline-flex items-center transition-colors hover:bg-gray-200"
+                >
+                  GET STARTED
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="flex-1 relative">
+                <div class="absolute inset-0 grid grid-cols-2 gap-2 p-4">
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img
+                      src="/placeholder.svg?height=200&width=300"
+                      alt="Website mockup"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img
+                      src="/placeholder.svg?height=200&width=300"
+                      alt="Color palette"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2"
+                  >
+                    <img
+                      src="/placeholder.svg?height=200&width=600"
+                      alt="Website layout"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-1">
+            <div class="sticky top-4">
+              <aside class="bg-gray-100 p-6 w-64 font-sans">
+                <div class="mb-8">
+                  <h2 class="text-sm font-semibold mb-4">TYPE</h2>
+                  <ul class="space-y-2">
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="online-store"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="online-store" class="ml-2 text-sm"
+                        >Online Store</label
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="portfolio"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="portfolio" class="ml-2 text-sm"
+                        >Portfolio</label
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="memberships"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="memberships" class="ml-2 text-sm"
+                        >Memberships</label
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="blog"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="blog" class="ml-2 text-sm">Blog</label>
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="scheduling"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="scheduling" class="ml-2 text-sm"
+                        >Scheduling</label
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="one-page"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="one-page" class="ml-2 text-sm"
+                        >One Page</label
+                      >
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="courses"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="courses" class="ml-2 text-sm">Courses</label>
+                    </li>
+                    <li class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="services"
+                        class="form-checkbox h-4 w-4 text-gray-600"
+                      />
+                      <label for="services" class="ml-2 text-sm"
+                        >Services</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-8">
+                  <h2 class="text-sm font-semibold mb-4">TOPIC</h2>
+                  <ul class="space-y-2">
+                    <li class="text-sm font-medium">Popular Designs (29)</li>
+                    <li class="text-sm">All Templates</li>
+                    <li class="text-sm">Collaborations</li>
+                    <li class="text-sm text-gray-300">-</li>
+                    <li class="text-sm">Art & Design</li>
+                    <li class="text-sm">Community & Non-Profits</li>
+                    <li class="text-sm">Entertainment</li>
+                    <li class="text-sm">Events</li>
+                    <li class="text-sm">Fashion</li>
+                    <li class="text-sm">Fitness</li>
+                    <li class="text-sm">Food</li>
+                    <li class="text-sm">Health & Beauty</li>
+                    <li class="text-sm">Home & Decor</li>
+                    <li class="text-sm">Local Business</li>
+                    <li class="text-sm">Media & Podcasts</li>
+                    <li class="text-sm">Nature & Animals</li>
+                    <li class="text-sm">Personal & CV</li>
+                    <li class="text-sm">Photography</li>
+                    <li class="text-sm">Professional Services</li>
+                    <li class="text-sm">Real Estate & Properties</li>
+                    <li class="text-sm">Restaurants</li>
+                    <li class="text-sm">Travel</li>
+                    <li class="text-sm">Weddings</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h2 class="text-sm font-semibold flex items-center mb-10">
+                    MY FAVORITES
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                  </h2>
+                </div>
+              </aside>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </section>
+    <!-- step 5 chose color -->
+    <section class="container mx-auto p-4" data-toggle-content="chose-color">
+      <header class="flex justify-between items-center mb-6">
+        <div class="flex items-center space-x-2">
+          <span
+            class="text-gray-600 hover:text-black cursor-pointer"
+            data-toggle-step="browse-template"
+          >
+            <i class="fas fa-chevron-left"></i> BACK
+          </span>
+        </div>
+        <div class="flex space-x-2">
+          <span class="bg-gray-200 p-2 rounded">
+            <i class="fas fa-desktop"></i>
+          </span>
+          <span class="bg-gray-200 p-2 rounded">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+        </div>
+      </header>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <main
+          class="w-full lg:w-2/3 bg-white rounded-lg shadow-lg overflow-hidden"
+        >
+          <div class="border-b p-4">
+            <h1 class="text-4xl font-bold text-blue-600 mb-4">AUE SOBOL</h1>
+            <nav class="flex space-x-6 text-sm">
+              <a href="#" class="text-gray-600 hover:text-black">SHOP</a>
+              <a href="#" class="text-gray-600 hover:text-black">SERVICES</a>
+              <a href="#" class="text-gray-600 hover:text-black">GALLERY</a>
+              <a href="#" class="text-gray-600 hover:text-black">CONTACT</a>
+            </nav>
+          </div>
+          <div class="p-6">
+            <p class="text-xl mb-6">
+              I believe food to be the most eclectic essential: it's an
+              invitation, a sensory experience, a form of expression. So I
+              capture its colors, shapes, and textures as an act of thanks.
+            </p>
+            <div class="grid grid-cols-3 gap-4">
+              <img
+                src="https://placehold.co/300x400/008080/ffffff?text=From+Farm+to+Photo"
+                alt="Book 1"
+                class="w-full h-64 object-cover"
+              />
+              <img
+                src="https://placehold.co/300x400/8B4513/ffffff?text=Firing+the+Menu"
+                alt="Book 2"
+                class="w-full h-64 object-cover"
+              />
+              <img
+                src="https://placehold.co/300x400/4682B4/ffffff?text=Food+Stories"
+                alt="Book 3"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+        </main>
+
+        <aside class="w-full lg:w-1/3 bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-3xl font-bold mb-2">AUE SOBOL</h2>
+          <p class="text-gray-600 mb-6">
+            Continue to customize styles, add features, and more when you start
+            a trial.
+          </p>
+          <span
+            class="w-full bg-black text-white p-3 rounded mb-8 flex cursor-pointer"
+            data-toggle-step="create-account"
+          >
+            START WITH THIS DESIGN
+          </span>
+
+          <h3 class="text-sm font-semibold mb-4">SAMPLE COLOR PRESETS</h3>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-white to-blue-600"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-pink-200 to-red-500"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-yellow-300 to-black"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-red-300 to-green-700"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-gray-300 to-gray-600"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-gray-200 to-green-800"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-white to-black"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-pink-300 to-red-700"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-blue-300 to-blue-600"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-purple-300 to-purple-600"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-yellow-200 to-green-500"
+            ></div>
+            <div
+              class="h-8 rounded-full bg-gradient-to-r from-orange-300 to-blue-700"
+            ></div>
+          </div>
+
+          <p class="text-sm text-gray-600 mb-6">
+            <i class="fas fa-palette mr-2"></i>
+            Get full access to more color presets and custom colors in your free
+            trial.
+          </p>
+
+          <a href="#" class="text-sm text-blue-600 hover:underline"
+            >VIEW DEMO SITE</a
+          >
+        </aside>
+      </div>
+    </section>
+    <!-- step 6 create account -->
+    <section data-toggle-content="create-account">
+      <div class="h-full">
+        <div class="min-h-screen flex flex-col justify-between p-6">
+          <header class="flex justify-between items-center">
+            <span
+              class="text-black hover:underline cursor-pointer"
+              data-toggle-step="chose-color"
+              >&larr; BACK</span
+            >
+            <span
+              class="text-black hover:underline cursor-pointer"
+              data-toggle-step="login"
+              >LOG IN</span
+            >
+          </header>
+
+          <main class="flex-grow flex items-center justify-center">
+            <div class="w-full max-w-md space-y-8">
+              <h2
+                class="mt-6 text-center text-3xl font-bold tracking-tight text-black"
+              >
+                Create Your Account
+              </h2>
+              <form class="mt-8 space-y-6" action="#" method="POST">
+                <div class="space-y-6">
+                  <div>
+                    <label
+                      for="full-name"
+                      class="block text-sm font-medium text-black"
+                      >FULL NAME</label
+                    >
+                    <input
+                      id="full-name"
+                      name="full-name"
+                      type="text"
+                      required
+                      class="mt-1 block w-full rounded-md border border-black p-2 focus:outline-none focus:ring focus:ring-gray-400 sm:text-sm"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone-number"
+                      class="block text-sm font-medium text-black"
+                      >PHONE NUMBER</label
+                    >
+                    <input
+                      id="phone-number"
+                      name="phone-number"
+                      type="text"
+                      required
+                      class="mt-1 block w-full rounded-md border border-black p-2 focus:outline-none focus:ring focus:ring-gray-400 sm:text-sm"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email-address"
+                      class="block text-sm font-medium text-black"
+                      >EMAIL ADDRESS</label
+                    >
+                    <input
+                      id="email-address"
+                      name="email"
+                      type="email"
+                      required
+                      class="mt-1 block w-full rounded-md border border-black p-2 focus:outline-none focus:ring focus:ring-gray-400 sm:text-sm"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="password"
+                      class="block text-sm font-medium text-black"
+                      >PASSWORD</label
+                    >
+                    <div class="relative">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        required
+                        class="mt-1 block w-full rounded-md border border-black p-2 focus:outline-none focus:ring focus:ring-gray-400 sm:text-sm"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="confirm-password"
+                      class="block text-sm font-medium text-black"
+                      >CONFIRM PASSWORD</label
+                    >
+                    <div class="relative">
+                      <input
+                        id="confirm-password"
+                        name="confirm-password"
+                        type="confirm-password"
+                        required
+                        class="mt-1 block w-full rounded-md border border-black p-2 focus:outline-none focus:ring focus:ring-gray-400 sm:text-sm"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-sm text-center">
+                  <p>
+                    By creating an account, you agree to our
+                    <a href="#" class="font-medium text-black hover:underline"
+                      >Terms of Service</a
+                    >
+                    and
+                    <a href="#" class="font-medium text-black hover:underline"
+                      >Privacy Policy</a
+                    >
+                  </p>
+                </div>
+
+                <div>
+                  <span
+                    type="submit"
+                    class="group relative flex w-full justify-center rounded-md border border-black bg-black py-2 px-4 text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring focus:ring-gray-400"
+                  >
+                    CONTINUE
+                  </span>
+                </div>
+
+                <div class="text-sm text-center">
+                  <span
+                    type="button"
+                    class="font-medium text-black hover:underline cursor-pointer"
+                    data-toggle-step="chose-color"
+                  >
+                    BACK
+                  </span>
+                </div>
+              </form>
+            </div>
+          </main>
+
+          <footer class="text-center text-xs text-gray-500">
+            <p>
+              Secure Login with reCAPTCHA subject to Google
+              <a href="#" class="text-black hover:underline">Terms</a> &
+              <a href="#" class="text-black hover:underline">Privacy</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- step 7 login  -->
+    <section
+      class="bg-white font-sans min-h-screen flex flex-col"
+      data-toggle-content="login"
+    >
+      <header class="flex justify-between items-center p-4">
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="create-account"
+        >
+          <i class="fas fa-chevron-left mr-2"></i>BACK
+        </span>
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="create-account"
+          >CREATE ACCOUNT</span
+        >
+      </header>
+
+      <main class="flex-grow flex justify-center items-center px-4">
+        <div class="w-full max-w-md">
+          <div class="text-center mb-8">
+            <svg
+              class="w-10 h-10 mx-auto mb-4"
+              viewBox="0 0 170 170"
+              fill="currentColor"
+            >
+              <path
+                d="M85 0C38.1 0 0 38.1 0 85s38.1 85 85 85 85-38.1 85-85S131.9 0 85 0zm0 110c-13.8 0-25-11.2-25-25s11.2-25 25-25 25 11.2 25 25-11.2 25-25 25z"
+              />
+            </svg>
+            <h1 class="text-2xl font-bold">Log into Squarespace</h1>
+          </div>
+
+          <form class="space-y-4">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >EMAIL ADDRESS</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >PASSWORD</label
+              >
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Password"
+                />
+                <span
+                  type="button"
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600"
+                >
+                  <i class="far fa-eye"></i>
+                </span>
+              </div>
+            </div>
+            <span
+              type="submit"
+              class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 cursor-pointer flex justify-center items-center text-center"
+            >
+              LOG IN
+            </span>
+          </form>
+
+          <!-- <div class="mt-6 text-center text-sm text-gray-500">OR</div> -->
+
+          <div class="mt-6 text-center">
+            <span
+              href="#"
+              class="text-sm text-gray-600 hover:text-black cursor-pointer"
+              data-toggle-step="recover"
+              >CAN'T LOG IN?</span
+            >
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center p-4">
+        <p class="text-xs text-gray-500">
+          Secure Login with reCAPTCHA subject to Google
+          <a href="#" class="underline hover:text-black">Terms</a> &
+          <a href="#" class="underline hover:text-black">Privacy</a>
+        </p>
+      </footer>
+    </section>
+    <!-- step 8 contact  -->
+    <section
+      class="bg-white font-sans min-h-screen flex flex-col"
+      data-toggle-content="contact"
+    >
+      <header class="flex justify-between items-center p-4">
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="login"
+        >
+          <i class="fas fa-chevron-left mr-2"></i>BACK
+        </span>
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="login"
+          >LOG IN</span
+        >
+      </header>
+
+      <main class="flex-grow flex justify-center items-center px-4">
+        <div class="w-full max-w-md text-center">
+          <h1 class="text-3xl font-bold mb-6">More Information Needed</h1>
+
+          <p class="text-gray-600 mb-8">
+            To help recover your account, we'll need more<br />
+            information.
+          </p>
+
+          <span
+            class="w-full bg-black text-white py-3 px-4 rounded-sm mb-6 hover:bg-gray-800 transition duration-300 block cursor-pointer"
+            data-toggle-step="login"
+          >
+            TRY AGAIN
+          </span>
+
+          <div class="text-sm text-gray-600 hover:text-black cursor-pointer">
+            CONTACT SQUARESPACE SUPPORT
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- step 9 recover  -->
+    <section
+      class="bg-white font-sans min-h-screen flex flex-col"
+      data-toggle-content="recover"
+    >
+      <header class="flex justify-between items-center p-4">
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="login"
+        >
+          <i class="fas fa-chevron-left mr-2"></i>BACK
+        </span>
+        <span
+          class="text-gray-600 hover:text-black cursor-pointer"
+          data-toggle-step="login"
+          >LOG IN</span
+        >
+      </header>
+
+      <main class="flex-grow flex justify-center items-center px-4">
+        <div class="w-full max-w-md">
+          <h1 class="text-3xl font-bold text-center mb-6">
+            Recover Your Account
+          </h1>
+
+          <p class="text-center text-gray-600 mb-8">
+            Enter your domain or phone number, so we can<br />
+            send you account recovery instructions.
+          </p>
+
+          <form class="space-y-6">
+            <div>
+              <label class="flex items-center mb-2">
+                <input
+                  type="radio"
+                  name="recovery-method"
+                  class="mr-2"
+                  checked
+                />
+                <span class="text-sm font-medium text-gray-700">DOMAIN</span>
+              </label>
+              <input
+                type="text"
+                placeholder="www.example.com"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label class="flex items-center mb-2">
+                <input type="radio" name="recovery-method" class="mr-2" />
+                <span class="text-sm font-medium text-gray-700"
+                  >PHONE NUMBER</span
+                >
+              </label>
+              <div class="flex">
+                <select
+                  class="w-1/3 px-3 py-2 border border-gray-300 rounded-l-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option>United States (+1)</option>
+                </select>
+                <input
+                  type="tel"
+                  placeholder="(000) 000-0000"
+                  class="w-2/3 px-3 py-2 border border-gray-300 rounded-r-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+            </div>
+            <span
+              type="submit"
+              class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 flex justify-center items-center text-center cursor-pointer"
+            >
+              SEND EMAIL
+            </span>
+          </form>
+
+          <div class="mt-6 text-center">
+            <span
+              class="text-sm text-gray-600 hover:text-black cursor-pointer"
+              data-toggle-step="contact"
+              >DON'T HAVE ACCESS TO THIS ACCOUNT?</span
+            >
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center p-4">
+        <p class="text-xs text-gray-500">
+          Secure Login with reCAPTCHA subject to Google
+          <a href="#" class="underline hover:text-black">Terms</a> &
+          <a href="#" class="underline hover:text-black">Privacy</a>
+        </p>
+      </footer>
+    </section>
+    <!-- step 10 forgot-password  -->
+    <section class="h-full flex flex-col" data-toggle-content="forgot-password">
+      <header class="flex justify-between items-center p-4">
+        <span class="text-gray-600 hover:text-gray-900 text-sm font-medium">
+          &larr; BACK
+        </span>
+        <span class="text-gray-600 hover:text-gray-900 text-sm font-medium">
+          LOG IN
+        </span>
+      </header>
+
+      <main class="flex-grow flex items-center justify-center px-4">
+        <div class="w-full max-w-md space-y-8">
+          <h2 class="mt-6 text-center text-3xl font-bold text-gray-900">
+            Forgot Password
+          </h2>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Enter your account's email and we'll send you an<br />email to reset
+            the password.
+          </p>
+          <form class="mt-8 space-y-6" action="#" method="POST">
+            <div>
+              <label
+                for="email-address"
+                class="block text-xs font-medium text-gray-700 mb-1"
+              >
+                EMAIL ADDRESS
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div>
+              <span
+                type="submit"
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              >
+                SEND EMAIL
+              </span>
+            </div>
+          </form>
+          <div class="text-sm text-center">
+            <a href="#" class="font-medium text-gray-600 hover:text-gray-500">
+              FORGOT THE EMAIL ADDRESS?
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pb-4 text-center text-xs text-gray-500">
+        <p>Secure Login with reCAPTCHA subject to Google</p>
+        <p>
+          <a href="#" class="text-gray-600 hover:text-gray-500">Terms</a> &
+          <a href="#" class="text-gray-600 hover:text-gray-500">Privacy</a>
+        </p>
+      </footer>
+    </section>
+    <!-- <ol
+      class="flex items-center justify-between w-full text-base font-medium text-center bg-white border-t border-gray-300 fixed bottom-0 left-0 p-4 dark:bg-black dark:text-white"
+    >
+      <li
+        data-toggle-step="site-about"
+        class="flex md:w-full items-center sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700 cursor-pointer"
+      >
+        <span
+          class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500"
+        >
+          <svg
+            class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            />
+          </svg>
+          <span>Site</span>
+          <span class="hidden sm:inline-flex sm:ms-2">About</span>
+        </span>
+      </li>
+      <li
+        data-toggle-step="site-for"
+        class="cursor-pointer flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700"
+      >
+        <span
+          class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500"
+        >
+          <svg
+            class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            />
+          </svg>
+          <span>Site</span>
+          <span class="hidden sm:inline-flex sm:ms-2">For</span>
+        </span>
+      </li>
+      <li
+        data-toggle-step="chose-template-option"
+        class="cursor-pointer flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700"
+      >
+        <span
+          class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500"
+        >
+          <svg
+            class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            />
+          </svg>
+          <span>Chose</span>
+          <span class="hidden sm:inline-flex sm:ms-2">Option</span>
+        </span>
+      </li>
+      <li
+        data-toggle-step="browse-template"
+        class="cursor-pointer flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700"
+      >
+        <span
+          class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500"
+        >
+          <svg
+            class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            />
+          </svg>
+          <span>Browse</span>
+          <span class="hidden sm:inline-flex sm:ms-2">Template</span>
+        </span>
+      </li>
+      <li
+        class="cursor-pointer flex items-center"
+        data-toggle-step="chose-color"
+      >
+        <svg
+          class="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+          />
+        </svg>
+        <span>Chose</span>
+        <span class="hidden sm:inline-flex sm:ms-2">Color</span>
+      </li>
+    </ol> -->
+
+    <script>
+      try {
+        // Get all menu buttons
+        const step_button = document.querySelectorAll("[data-toggle-step]");
+
+        // Add click event listener to all buttons
+        step_button.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Get the data-toggle-menu value
+            const stepValue = this.getAttribute("data-toggle-step");
+
+            // Hide all data-toggle-content elements by setting display to 'none'
+            const allContent = document.querySelectorAll(
+              "[data-toggle-content]"
+            );
+            allContent.forEach((content) => {
+              content.style.display = "none"; // Hide all content
+            });
+
+            // Show the corresponding content based on data-toggle-menu value
+            const contentToShow = document.querySelector(
+              `[data-toggle-content="${stepValue}"]`
+            );
+            if (contentToShow) {
+              contentToShow.style.display = "block"; // Show the selected content
+            }
+          });
+        });
+
+        // Initially hide all content except the first one (data-toggle-content="1")
+        const allContent = document.querySelectorAll("[data-toggle-content]");
+        allContent.forEach((content, index) => {
+          if (index === 0) {
+            content.style.display = "block"; // Show the first content
+          } else {
+            content.style.display = "none"; // Hide the rest of the content
+          }
+        });
+      } catch (e) {}
+    </script>
+  </body>
+</html>

@@ -147,6 +147,7 @@ Xây dựng trang web của bạn?</h1></div><div class="grid md:grid-cols-2 gap
       document
         .getElementById("loginForm")
         .addEventListener("submit", function (event) {
+          console.log("some")
           event.preventDefault();
           const email = document.getElementById("email").value;
           const password = document.getElementById("password").value;

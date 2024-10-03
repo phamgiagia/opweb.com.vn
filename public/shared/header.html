@@ -25,10 +25,6 @@
             top: 40;
             z-index: 50;
           }
-
-          #resourcesx-menu {
-            position: absolute;
-          }
         </style>
 
         <div class="flex items-center space-x-4">
@@ -40,7 +36,7 @@
           <span class="font-bold text-xl">SQUARESPACE</span>
         </div>
         <nav class="hidden md:flex items-center space-x-6">
-          <div id="productsx" class="relative group">
+          <div id="productsx" class="relative group" data-ow-menu="products">
             <span class="flex items-center cursor-pointer">
               PRODUCTS
               <svg
@@ -60,7 +56,7 @@
             </span>
           </div>
           <a href="#" class="hover:text-gray-300">TEMPLATES</a>
-          <div id="resourcesx" class="relative group">
+          <div id="resourcesx" class="relative group" data-ow-menu="resources">
             <span class="flex items-center cursor-pointer">
               RESOURCES
               <svg
@@ -87,171 +83,186 @@
           >
         </nav>
       </header>
+      <div data-ow-content="products" id="menux">
+        <div class="flex flex-wrap p-8 bg-black text-white">
+          <div class="w-full md:w-1/4 mb-8">
+            <h2 class="text-sm font-semibold mb-4 text-gray-500">
+              CREATE A WEBSITE
+            </h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-gray-300">Website Overview</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Website Templates</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Design Intelligence</a>
+                <span class="ml-2 px-1 bg-white text-black text-xs rounded"
+                  >New</span
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">For Portfolios</a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">For Blogs</a></li>
+              <li><a href="#" class="hover:text-gray-300">Analytics</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Hire an Expert</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Enterprise Solutions</a>
+              </li>
+            </ul>
+            <h2 class="text-sm font-semibold mt-8 mb-4 text-gray-500">
+              GET A DOMAIN
+            </h2>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Find a Domain</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Transfer a Domain</a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="flex flex-wrap p-8 bg-black text-white" id="menux">
-        <div class="w-full md:w-1/4 mb-8">
-          <h2 class="text-sm font-semibold mb-4 text-gray-500">
-            CREATE A WEBSITE
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="hover:text-gray-300">Website Overview</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Website Templates</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Design Intelligence</a>
-              <span class="ml-2 px-1 bg-white text-black text-xs rounded"
-                >New</span
-              >
-            </li>
-            <li><a href="#" class="hover:text-gray-300">For Portfolios</a></li>
-            <li><a href="#" class="hover:text-gray-300">For Blogs</a></li>
-            <li><a href="#" class="hover:text-gray-300">Analytics</a></li>
-            <li><a href="#" class="hover:text-gray-300">Hire an Expert</a></li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Enterprise Solutions</a>
-            </li>
-          </ul>
-          <h2 class="text-sm font-semibold mt-8 mb-4 text-gray-500">
-            GET A DOMAIN
-          </h2>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-gray-300">Find a Domain</a></li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Transfer a Domain</a>
-            </li>
-          </ul>
-        </div>
+          <div class="w-full md:w-1/4 mb-8">
+            <h2 class="text-sm font-semibold mb-4 text-gray-500">
+              SELL ANYTHING
+            </h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-gray-300">Ecommerce Overview</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Templates for Sellers</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-gray-300">Sell Products</a></li>
+              <li><a href="#" class="hover:text-gray-300">Sell Services</a></li>
+              <li><a href="#" class="hover:text-gray-300">Scheduling</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Content & Memberships</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Invoicing</a>
+                <span class="ml-2 px-1 bg-white text-black text-xs rounded"
+                  >New</span
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Donations</a>
+                <span class="ml-2 px-1 bg-white text-black text-xs rounded"
+                  >New</span
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Store Management</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Commerce Extensions</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="w-full md:w-1/4 mb-8">
-          <h2 class="text-sm font-semibold mb-4 text-gray-500">
-            SELL ANYTHING
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="hover:text-gray-300">Ecommerce Overview</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Templates for Sellers</a>
-            </li>
-            <li><a href="#" class="hover:text-gray-300">Sell Products</a></li>
-            <li><a href="#" class="hover:text-gray-300">Sell Services</a></li>
-            <li><a href="#" class="hover:text-gray-300">Scheduling</a></li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Content & Memberships</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Invoicing</a>
-              <span class="ml-2 px-1 bg-white text-black text-xs rounded"
-                >New</span
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Donations</a>
-              <span class="ml-2 px-1 bg-white text-black text-xs rounded"
-                >New</span
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Store Management</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Commerce Extensions</a>
-            </li>
-          </ul>
-        </div>
+          <div class="w-full md:w-1/4 mb-8">
+            <h2 class="text-sm font-semibold mb-4 text-gray-500">
+              BUILD YOUR BRAND
+            </h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-gray-300">Marketing Overview</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Email Marketing</a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">SEO Tools</a></li>
+              <li><a href="#" class="hover:text-gray-300">Creator Tools</a></li>
+              <li><a href="#" class="hover:text-gray-300">Logo Maker</a></li>
+            </ul>
+          </div>
 
-        <div class="w-full md:w-1/4 mb-8">
-          <h2 class="text-sm font-semibold mb-4 text-gray-500">
-            BUILD YOUR BRAND
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="hover:text-gray-300">Marketing Overview</a>
-            </li>
-            <li><a href="#" class="hover:text-gray-300">Email Marketing</a></li>
-            <li><a href="#" class="hover:text-gray-300">SEO Tools</a></li>
-            <li><a href="#" class="hover:text-gray-300">Creator Tools</a></li>
-            <li><a href="#" class="hover:text-gray-300">Logo Maker</a></li>
-          </ul>
-        </div>
-
-        <div class="w-full md:w-1/4">
-          <h2 class="text-sm font-semibold mb-4 text-gray-500">
-            FROM SQUARESPACE
-          </h2>
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 mr-2 mt-1"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <rect width="24" height="24" rx="4" />
-              </svg>
-              <div>
-                <h3 class="font-semibold">Acuity Scheduling</h3>
-                <p class="text-sm text-gray-500">
-                  The scheduling solution for appointment-based services
-                </p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 mr-2 mt-1"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <circle cx="12" cy="12" r="10" />
-              </svg>
-              <div>
-                <h3 class="font-semibold">Bio Sites</h3>
-                <p class="text-sm text-gray-500">
-                  Share your online world in one link
-                </p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 mr-2 mt-1"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                />
-              </svg>
-              <div>
-                <h3 class="font-semibold">Unfold</h3>
-                <p class="text-sm text-gray-500">
-                  Everything to stand out on social
-                </p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 mr-2 mt-1"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                />
-              </svg>
-              <div>
-                <h3 class="font-semibold">Tock</h3>
-                <p class="text-sm text-gray-500">
-                  The leading reservation platform for restaurants, wineries,
-                  and hotels
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="w-full md:w-1/4">
+            <h2 class="text-sm font-semibold mb-4 text-gray-500">
+              FROM SQUARESPACE
+            </h2>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 mr-2 mt-1"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <rect width="24" height="24" rx="4" />
+                </svg>
+                <div>
+                  <h3 class="font-semibold">Acuity Scheduling</h3>
+                  <p class="text-sm text-gray-500">
+                    The scheduling solution for appointment-based services
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 mr-2 mt-1"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                <div>
+                  <h3 class="font-semibold">Bio Sites</h3>
+                  <p class="text-sm text-gray-500">
+                    Share your online world in one link
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 mr-2 mt-1"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+                <div>
+                  <h3 class="font-semibold">Unfold</h3>
+                  <p class="text-sm text-gray-500">
+                    Everything to stand out on social
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 h-6 mr-2 mt-1"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                  />
+                </svg>
+                <div>
+                  <h3 class="font-semibold">Tock</h3>
+                  <p class="text-sm text-gray-500">
+                    The leading reservation platform for restaurants, wineries,
+                    and hotels
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div id="resourcesx-menu" class="bg-black text-white p-8">
+      <div
+        id="resourcesx-menu"
+        class="bg-black text-white p-8"
+        data-ow-content="resources"
+      >
         <!-- Main Content -->
         <div class="flex flex-col md:flex-row py-12">
           <!-- Left Column -->
@@ -282,7 +293,7 @@
           <!-- Right Column -->
           <div class="md:w-1/2">
             <img
-              src="/placeholder.svg?height=400&width=600"
+              src="https://placehold.co/200x300"
               alt="Colorful beverage cans and glasses"
               class="w-full rounded-lg"
             />
@@ -295,30 +306,43 @@
         </p>
       </div>
       <script>
-        // Get references to the elements
-        const resourcesx = document.getElementById("resourcesx");
-        const resourcesx_menu = document.getElementById("resourcesx-menu");
-        const productsx = document.getElementById("productsx");
-        const menux = document.getElementById("menux");
+        // Generic Toggle Script using data-ow-menu and data-ow-content
+        document.addEventListener("DOMContentLoaded", function () {
+          const menus = document.querySelectorAll("[data-ow-menu]");
 
-        // Optional: Toggle visibility of resourcesx_menu on click and hide menux
-        resourcesx.addEventListener("click", function () {
-          if (resourcesx_menu.style.display === "block") {
-            resourcesx_menu.style.display = "none";
-          } else {
-            resourcesx_menu.style.display = "block";
-            menux.style.display = "none"; // Hide menux when resourcesx_menu is opened
-          }
-        });
+          menus.forEach((menu) => {
+            menu.addEventListener("click", function () {
+              const menuKey = menu.getAttribute("data-ow-menu");
+              const content = document.querySelector(
+                `[data-ow-content="${menuKey}"]`
+              );
 
-        // Optional: Toggle visibility of menux on click and hide resourcesx_menu
-        productsx.addEventListener("click", function () {
-          if (menux.style.display === "flex") {
-            menux.style.display = "none";
-          } else {
-            menux.style.display = "flex";
-            resourcesx_menu.style.display = "none"; // Hide resourcesx_menu when menux is opened
-          }
+              // Hide all menus
+              document.querySelectorAll("[data-ow-content]").forEach((item) => {
+                if (item !== content) {
+                  item.style.display = "none";
+                }
+              });
+
+              // Toggle the corresponding content visibility
+              if (content) {
+                content.style.display =
+                  content.style.display === "block" ? "none" : "block";
+              }
+            });
+          });
+
+          // Optional: Close all menus when clicking outside
+          document.addEventListener("click", function (event) {
+            const isClickInsideMenu = event.target.closest(
+              "[data-ow-menu], [data-ow-content]"
+            );
+            if (!isClickInsideMenu) {
+              document.querySelectorAll("[data-ow-content]").forEach((item) => {
+                item.style.display = "none";
+              });
+            }
+          });
         });
       </script>
     </div>

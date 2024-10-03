@@ -305,47 +305,45 @@
           A collection of inspirational websites made by real Squarespace users.
         </p>
       </div>
-      <script>
-        function initializeToggle() {
-  const menus = document.querySelectorAll("[data-ow-menu]");
+     <script>
+        // Generic Toggle Script using data-ow-menu and data-ow-content
+        document.addEventListener("DOMContentLoaded", function () {
+          const menus = document.querySelectorAll("[data-ow-menu]");
 
-  menus.forEach((menu) => {
-    menu.addEventListener("click", function () {
-      const menuKey = menu.getAttribute("data-ow-menu");
-      const content = document.querySelector(
-        `[data-ow-content="${menuKey}"]`
-      );
+          menus.forEach((menu) => {
+            menu.addEventListener("click", function () {
+              const menuKey = menu.getAttribute("data-ow-menu");
+              const content = document.querySelector(
+                `[data-ow-content="${menuKey}"]`
+              );
 
-      // Hide all menus
-      document.querySelectorAll("[data-ow-content]").forEach((item) => {
-        if (item !== content) {
-          item.style.display = "none";
-        }
-      });
+              // Hide all menus
+              document.querySelectorAll("[data-ow-content]").forEach((item) => {
+                if (item !== content) {
+                  item.style.display = "none";
+                }
+              });
 
-      // Toggle the corresponding content visibility
-      if (content) {
-        content.style.display =
-          content.style.display === "block" ? "none" : "block";
-      }
-    });
-  });
+              // Toggle the corresponding content visibility
+              if (content) {
+                content.style.display =
+                  content.style.display === "block" ? "none" : "block";
+              }
+            });
+          });
 
-  // Optional: Close all menus when clicking outside
-  document.addEventListener("click", function (event) {
-    const isClickInsideMenu = event.target.closest(
-      "[data-ow-menu], [data-ow-content]"
-    );
-    if (!isClickInsideMenu) {
-      document.querySelectorAll("[data-ow-content]").forEach((item) => {
-        item.style.display = "none";
-      });
-    }
-  });
-}
-
-        // Initialize toggle functionality
-  initializeToggle();
+          // Optional: Close all menus when clicking outside
+          document.addEventListener("click", function (event) {
+            const isClickInsideMenu = event.target.closest(
+              "[data-ow-menu], [data-ow-content]"
+            );
+            if (!isClickInsideMenu) {
+              document.querySelectorAll("[data-ow-content]").forEach((item) => {
+                item.style.display = "none";
+              });
+            }
+          });
+        });
       </script>
     </div>
   </body>

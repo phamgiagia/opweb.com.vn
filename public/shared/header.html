@@ -305,10 +305,14 @@
           A collection of inspirational websites made by real Squarespace users.
         </p>
       </div>
-     <script>
-        // Generic Toggle Script using data-ow-menu and data-ow-content
-       const menus = document.querySelectorAll("[data-ow-menu]");
-
+      <script>
+        try {
+          // Generic Toggle Script using data-ow-menu and data-ow-content
+          const menus = document.querySelectorAll("[data-ow-menu]");
+          // Hide all contents at the start
+          document.querySelectorAll("[data-ow-content]").forEach((item) => {
+            item.style.display = "none";
+          });
           menus.forEach((menu) => {
             menu.addEventListener("click", function () {
               const menuKey = menu.getAttribute("data-ow-menu");
@@ -342,6 +346,7 @@
               });
             }
           });
+        } catch (error) {}
       </script>
     </div>
   </body>
